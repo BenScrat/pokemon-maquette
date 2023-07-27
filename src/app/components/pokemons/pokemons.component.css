@@ -1,0 +1,11 @@
+@import 'primeflex/primeflex.css';
+
+.imgPoke {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.col-4{
+    border-radius: 15px;
+}

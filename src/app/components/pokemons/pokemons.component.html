@@ -1,1 +1,18 @@
 <p>Tous les pokemons</p>
+<div class="grid flex md:flex-row flex-column">
+<div *ngFor="let p of pokemons" class="col-2 md-2 lg-1 m-6"  [ngStyle]="{ 'box-shadow': getPokemonTypeShadow(p.type) }">
+
+<p-card>
+  <ng-template pTemplate="header">
+    <img alt="{{p.nom}}" src="{{p.img}}" class="imgPoke"/>
+  </ng-template>
+  <p class="font-bold">{{p.nom}}</p>
+
+  <p>Catégorie : {{p.categories}}</p>
+  <p>Type : {{p.type}}</p>
+  <p>Taille : {{p.taille}}Kg</p>
+  <p>Poids : {{p.poids}}m</p>
+</p-card>
+</div>
+</div>
+

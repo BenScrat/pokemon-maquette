@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GenerationsComponent } from './components/generations/generations.component';
 import { PokemonsComponent } from './components/pokemons/pokemons.component';
+import { CardModule } from 'primeng/card';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PokemonsComponent } from './components/pokemons/pokemons.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
